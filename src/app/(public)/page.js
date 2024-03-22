@@ -1,12 +1,20 @@
 import Header from "@/sections/Header";
-import Footer from "@/sections/Footer";
 import SpecialMenuBlock from "@/sections/SpecialMenuBlock";
+import Footer from "@/sections/Footer";
+
+const PAGES = [
+  {
+    title: "LFU Companion",
+    link: "/lf-companion",
+    image: "/penny-ai.png",
+  },
+];
 
 export default function Home() {
   return (
-    <main className={"w-full h-full"}>
+    <main className={"grid grid-cols-1 min-h-screen bg-neutral-800"}>
       <Header />
-      <SpecialMenuBlock />
+      <SpecialMenuBlock pages={PAGES} />
       <Footer />
     </main>
   );

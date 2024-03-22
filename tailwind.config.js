@@ -9,7 +9,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Europa"],
+        sans: ["europa", "sans-serif"],
+        heading: ["anton", "sans-serif"],
       },
       colors: {
         primary: {
